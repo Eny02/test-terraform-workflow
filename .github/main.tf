@@ -1,9 +1,9 @@
 resource "local_file" "witam" {
-  content = <<EOF
+  content = <<EOT
   def przywitanie():
       print(var.powitanie)
   przywitanie()
-  EOF
+  EOT
 
   filename = "hello.py"
 }
