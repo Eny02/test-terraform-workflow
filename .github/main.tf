@@ -5,5 +5,5 @@ resource "local_file" "witam" {
   przywitanie()
   EOT
 
-  filename = "hello.py"
+  filename = "witam.py"
 }
