@@ -18,7 +18,7 @@ jobs:
       - name: Poprawność konfiguracji
         run: terraform plan
         env:
-          TF_VAR_greeting: "Hello from Terraform!"
+          TF_VAR_greeting: "Witam!"
       - name: Tworzenie zasobów
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
